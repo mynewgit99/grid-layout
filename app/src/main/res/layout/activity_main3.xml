@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextCollegeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="College ID" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCollegeID"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/editTextPRN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:hint="PRN" />
+
+    <Spinner
+        android:id="@+id/spinnerBatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPRN"
+        android:prompt="Select Batch" />
+
+    <Spinner
+        android:id="@+id/spinnerCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerBatch"
+        android:prompt="Select Course" />
+
+    <Spinner
+        android:id="@+id/spinnerTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCourse"
+        android:prompt="Select Topic to Vote On" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupVote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerTopic"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupVote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Submit" />
+
+</RelativeLayout>
